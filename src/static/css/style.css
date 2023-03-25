@@ -1,0 +1,57 @@
+/* body{
+    background-color: black;
+} */
+
+.search-container{
+    /* background-color: white; */
+    /* display: block; */
+    margin-top: 10%;
+    text-align: center;
+
+}
+.text-field{
+    background-color: pink;
+    border-radius: 7px;
+    width: 50%;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.output-box{    
+
+border: 1px solid silver;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 3px;
+    margin:20px;
+
+}
+.prediction{
+    border: 1px solid silver;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 3px;
+    margin: 20px;
+}
+
+.prediction li{
+    border-radius: 25px;
+    background-color: pink;
+    box-shadow: 5px 10px ;
+    padding: 20px;
+    margin:20px 5px;
+}
+#predict-btn {
+    background-color: pink;
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;    
+}
+/* shadow effect on hover */
+#predict-btn:hover{
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px 0 #f5f5f5;
+}

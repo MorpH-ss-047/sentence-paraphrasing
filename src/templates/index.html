@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+
+
+  <body>
+
+    
+    <form action = "http://localhost:5000/predict" method="POST">
+      <div class="search-container">
+        <input class="text-field" name="text" type="text" placeholder="Enter text here..."/>
+        <input id="num-para" class="text-field" name="num_return_sequences" type="text" placeholder="Enter number of paraphrases to generate..."/>
+        <input id="predict-btn" type="submit"  value="submit"/>
+      </div>
+    </form>
+
+  </body>
+</html>

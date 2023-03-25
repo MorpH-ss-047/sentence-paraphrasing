@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paraphrasing</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <!-- show paraphrase prediction -->
+    <div class="container">
+      <div class="output-box" id="ip">
+        <div class="col-12">
+          <h2>Input Text</h2>
+          <p>{{ input_text }}</p>
+        </div>
+      </div>
+      <div class="prediction">
+        <div class="col-12">
+          <h2>Paraphrase Prediction</h2>
+          <ol>
+            <!-- For loop logic of jinja template -->
+            {% for prediction in predictions %}
+
+            <li>{{ prediction }}</li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
